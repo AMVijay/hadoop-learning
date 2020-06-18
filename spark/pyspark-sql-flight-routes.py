@@ -13,3 +13,4 @@ sqlDF = sparkSession.sql("select * from flights where ` destination apirport` = 
 print("Print SQL dataFrame")
 sqlDF.show()
 
+
