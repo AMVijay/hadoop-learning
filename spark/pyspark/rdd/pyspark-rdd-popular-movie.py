@@ -5,7 +5,7 @@
 from pyspark import SparkContext, SparkConf
 
 # Initialize the Spark Context
-configuration = SparkConf().setMaster("local").setAppName("popular-movie-analysis")
+configuration = SparkConf().setMaster("local[*]").setAppName("popular-movie-analysis")
 sparkContext = SparkContext(conf=configuration)
 
 # Read the text file data and create RDD
